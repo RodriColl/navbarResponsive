@@ -261,3 +261,15 @@ a.nav-link:hover, a.nav-link.mx-lg-2.active {
     display: none !important;
   }
 }
+@media (max-width: 991.98px) {
+
+  /* Oculta el mega menú en mobile */
+  .mega-menu {
+    display: none !important;
+  }
+
+  /* Evita cualquier efecto hover */
+  .mega-parent:hover .mega-menu {
+    display: none !important;
+  }
+}
