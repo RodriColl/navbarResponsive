@@ -24,6 +24,13 @@
 	padding: 6px 15px;
 	border-radius: 50px;
 	transition: 0.3s background-color;
+	display: inline-block;
+}
+
+.login-button.d-block {
+	display: block;
+	text-align: center;
+	width: 100%;
 }
 
 .login-button:hover {
