@@ -20,6 +20,27 @@ body {
 main {
 	flex: 1;
 }
+
+.btn-vermas {
+	background-color: rgb(0, 140, 255);;
+	font-family: poppins,sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px 16px;
+	border-radius: 50px;
+	transition: 0.3s background-color;
+	display: inline-block;
+	margin-top: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-vermas a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
 /* ===== CONTENEDOR ===== */
 .mega-parent {
 	position: relative;
@@ -45,24 +66,19 @@ main {
 	width: 650px;
 	background: rgba(255, 255, 255, 0.95);
 	border-radius: 16px;
-
 	padding: 25px;
 	z-index: 9999;
-
 	backdrop-filter: blur(12px);
 	box-shadow:
 		0 10px 30px rgba(0,0,0,0.1),
 		0 25px 60px rgba(0,0,0,0.15);
-
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
-
 	transition:
 		opacity 0.25s ease,
 		transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
 		visibility 0.25s;
-
 	transition-delay: 0.05s;
 }
 
@@ -71,7 +87,6 @@ main {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
-
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -100,7 +115,7 @@ main {
 	pointer-events: auto;
 }
 
-/* ===== ANIMACIÓN ESCALONADA (SIMPLIFICADA) ===== */
+/* =====ANIMACIÓN ESCALONADA===== */
 .mega-parent:hover .mega-content li {
 	opacity: 1;
 	transform: translateY(0);
@@ -145,6 +160,7 @@ h6 {
 	position: relative;
 	width: 100%;
 	bottom: 0;
+	unicode-bidi: isolate;
 }
 
 .textoFooter {
@@ -162,6 +178,7 @@ h6 {
 	width: 70%;
 	margin: 20px auto;
 	overflow: visible;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .login-button {
@@ -242,34 +259,24 @@ a.nav-link:hover, a.nav-link.mx-lg-2.active {
 }
 
 @media (max-width: 992px) {
-
-  .login-button {
+.login-button {
     display: block;
     width: 60%;
     margin: 15px auto 0;
     text-align: center;
-  }
 }
-
-@media (max-width: 991.98px) {
-
-  .mega-parent {
+.mega-parent {
     position: static;
-  }
-
-  .mega-menu {
-    display: none !important;
-  }
 }
-@media (max-width: 991.98px) {
-
+.mega-menu {
+    display: none !important;
+}
   /* Oculta el mega menú en mobile */
-  .mega-menu {
+.mega-menu {
     display: none !important;
-  }
-
+}
   /* Evita cualquier efecto hover */
-  .mega-parent:hover .mega-menu {
+.mega-parent:hover .mega-menu {
     display: none !important;
-  }
+}
 }
