@@ -250,3 +250,14 @@ a.nav-link:hover, a.nav-link.mx-lg-2.active {
     text-align: center;
   }
 }
+
+@media (max-width: 991.98px) {
+
+  .mega-parent {
+    position: static;
+  }
+
+  .mega-menu {
+    display: none !important;
+  }
+}
